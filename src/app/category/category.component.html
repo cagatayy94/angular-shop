@@ -1,5 +1,2 @@
-<h3>{{title}}</h3>
-<ul class="list-group">
-    <li class="list-group-item active">Tüm ürünler</li>
-    <li *ngFor="let category of categories" class="list-group-item"><a href="">{{ category.name | uppercase }}</a></li>
-</ul>
+<a class="p-2 link-secondary" routerLink="">Tüm Ürünler</a>
+<a *ngFor="let category of categories" class="p-2 link-secondary" routerLink="products/category/{{ category.categoryId }}">{{ category.name | uppercase }}</a>
